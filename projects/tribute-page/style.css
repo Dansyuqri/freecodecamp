@@ -1,0 +1,50 @@
+body {
+  background: url("https://images.unsplash.com/photo-1554980333-9ccb552ca9f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+  font-family: arial, san-serif;
+  height: 100%;
+}
+
+#title {
+  font-family: impact, fantasy;
+  height: 20vh;
+  line-height: 20vh;
+  text-align: center;
+}
+#title > h1 {
+  font-size: 3em;
+  color: white;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-div > #image {
+  max-width: 100%;
+  filter: grayscale(80%);
+}
+
+#img-div > #img-caption {
+  color: white;
+  margin: 15px 0 5px 0;
+}
+
+#tribute-info > .text-card {
+  padding: 20px;
+    background: rgba(255,255,255,0.7);
+  box-shadow: 5px 5px 2px grey;
+}
+
+#tribute-info > .left-align {
+  text-align: left;
+}
+
+#tribute-info > .right-align {
+  text-align: right;
+}
+
+#tribute-info > .center-align {
+  text-align: center;
+}
