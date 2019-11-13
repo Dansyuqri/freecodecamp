@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1 id="title">A Survey on Pets</h1>
+            <p id="description">This survey is meant to understand public's pet preference.</p>
+        </header>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+            <label id="number-label" for="number">Age (optional)</label>
+            <input id="number" type="number" name="number" placeholder="Enter your age" min="0" max="150"/>
+            <label id="dropdown-label" for="dropdown">Which of the following pet(s) do you own?</label>
+            <select id="dropdown">
+                <option disabled aria-disabled="true">Select an animal</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Mouse</option>
+                <option>Parrot</option>
+                <option>Goldfish</option>
+                <option>Others</option>
+            </select>
+            <label id="pet-question-label">Do you play with your pet?</label>
+            <label for="pet-yes"> 
+                <input id="pet-yes" type="radio" name="pet-question" value="Yes">Yes
+            </label>
+            <label for="pet-no"> 
+                <input id="pet-no" type="radio" name="pet-question" value="No">No
+            </label>
+            <label for="pet-maybe"> 
+                <input id="pet-maybe" type="radio" name="pet-question" value="Prefer not to say">Prefer not to say
+            </label>
+            
+            <label id="pet-play-label">Where do you usually bring your pet to play?</label>
+            <label for="living-room"> 
+                <input id="living-room" type="checkbox" name="pet-play" value="Living room">Living room
+            </label>
+            <label for="kitchen"> 
+                <input id="kitchen" type="checkbox" name="pet-play" value="Kitchen">Kitchen
+            </label>
+            <label for="lawn"> 
+                <input id="lawn" type="checkbox" name="pet-play" value="Lawn">Lawn
+            </label>
+            <label for="bathroom"> 
+                <input id="bathroom" type="checkbox" name="pet-play" value="Bathroom">Bathroom
+            </label>
+            <label for="confine"> 
+                <input id="confine" type="checkbox" name="pet-play" value="Within the confines of cage/bowl">Within the confines of cage/bowl
+            </label>
+            
+            <label id="play-area-suggestion-label">Do you have any suggestions for a playground for pets?</label>
+            <textarea id="play-area-suggestion"></textarea>
+            
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

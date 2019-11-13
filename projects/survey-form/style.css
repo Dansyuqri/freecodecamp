@@ -1,0 +1,34 @@
+body {
+    font-family: arial, san-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+#survey-form {
+    /* display: block; */
+    /* flex-direction: column; */
+    /* font-size: 1rem; */
+}
+
+
+/* #survey-form > #name-label, #email-label, #number-label, #dropdown-label, #pet-question-label, #pet-play-label, #play-area-suggestion-label {
+    margin: 20px 0 4px 0;
+} */
