@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#about > h2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+.row > p {
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.row > i {
+    margin-right: 1.25rem;
+}
+
+.fa-lightbulb {
+    color: rgb(255, 115, 0);
+}
+
+.fa-equals {
+    color: rgb(6, 177, 6);
+}
+
+.fa-heart {
+    color: red;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+#header > .row {
+    margin: 0;
+}
+
+#header > .row > p {
+    align-self: center;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background: rgb(168, 168, 168);
+}
+
+#footer > #nav-bar > .nav-link {
+    display: block;
+    margin: auto 8px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#brand {
+    font-size: 1.25rem;
+    margin: 0 1.25rem;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+#header > #nav-bar > .nav-link {
+    display: block;
+    margin: auto 8px;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+#header > #nav-bar > .nav-link:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#video-container > h2 {
+    text-align: center;
+}
+
+.container {
+    margin: 150px auto 0 auto;
+    width: 100%;
+}
+
+#video-container {
+    width: 100%;
+}
+
+#video-container > iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#subscribe > h2 {
+    text-align: center;
+}
+
+#subscribe > form {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#subscribe > form > input {
+    font-size: 1.25rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+#email {
+    padding: 4px 8px;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 540px;
+    }
+
+    #video-container > iframe {
+        width: 426px;
+        height: 240px;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 720px;
+    }
+
+    #video-container > iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
